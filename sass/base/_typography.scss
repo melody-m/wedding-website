@@ -1,0 +1,209 @@
+
+body {
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color:$color-med-blue;
+}
+
+
+h1 {
+    margin: 4rem;
+    font-weight: 600;
+    font-size:3.5rem;
+
+    letter-spacing: .8rem;
+    font-variant: small-caps;
+}
+
+h2 {
+
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+
+h3 {
+    font-variant:small-caps;
+    font-size: 3rem;
+    color:$color-med-blue;
+    font-weight: 400;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+
+.wedding {
+    
+    &__subtitle {
+        text-align: left;
+        font-style: italic;
+        font-size: 3rem;
+        margin: 3rem 0;
+        margin-top: 8rem;
+        color:$color-med-blue;
+        font-weight: 400;
+        letter-spacing: .2rem;
+
+        @include respond(phone) {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__ceremony {
+        margin-top:0;
+    }
+
+    &__hour {
+        font-size:8rem;
+        line-height: 8rem;
+        font-weight: 200;
+        color : $color-light-blue;
+
+        @include respond(tab-land) {
+            font-size: 6rem;
+        }
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
+
+    }
+
+    &__afternoon {
+        font-size: 4rem;
+        line-height: 4rem;
+        font-style: italic;
+        color : $color-light-blue;
+
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
+    }
+
+    &__city {
+        font-size: 3rem;
+        font-weight: 200;
+        font-variant:small-caps;
+        color : $color-light-blue;  
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+    }
+
+    &__place {
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 400;
+        font-variant:small-caps;
+        color:$color-med-blue;
+
+        @include respond(tab-land) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__postcode{
+        font-size: 3rem;
+        line-height: 3rem;
+        font-style: italic;
+        color:$color-med-blue;
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
+    }
+    
+    &__role{
+        font-size: 3rem;
+        line-height: 4rem;
+        font-variant:small-caps;
+        color : $color-light-blue; 
+        float: right;
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
+    }
+    
+    &__nameWP{
+        font-size: 3rem;
+        line-height: 4rem;
+        font-style: italic;
+        color:$color-med-blue;
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.travel {
+
+    &__text {
+        text-align: justify;
+    }
+
+    &__parking-list {
+        list-style: none;
+    }
+    
+    &__parking {
+        font-weight: 700;
+        padding-left: 2rem;
+    }
+}
+
+
+.section-feature{
+    h3 {
+        color:$color-dark-peach;
+    }
+}
+
+
+.question__list{
+
+
+    h3{
+        text-align: left;
+        font-style: italic;
+        margin: 4rem 0 2rem 0;
+    }
+
+    p{
+        color: $color-med-blue-2;
+    }
+}
+
+
+.section {
+
+    &__rsvpYear {
+        color: $color-white;
+        text-align: left;
+        font-size: 8rem;
+        font-weight:200;
+        line-height: 8rem;
+        display: block;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+    }
+
+    &__rsvpInfo {
+        color: $color-white;
+        font-style: italic;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-left: 2rem;
+
+        @include respond(tab-port) {
+            text-align: center;
+            line-height: 6rem;
+            margin:0;
+        }
+    }
+}
+

@@ -1,0 +1,284 @@
+.section-wedding{
+	background-image: linear-gradient(
+		to bottom, 
+		rgba($color-white, 1), 
+    	rgba($color-light-blue,.2));
+
+    padding: 10rem 0;
+    border-bottom: 3px solid $color-white;
+
+    @include respond(phone) {
+        padding: 5rem 0;
+        padding-bottom: 8rem;
+    }
+
+}
+
+
+.wedding{
+    
+    &__title {
+    height: 30rem;
+    color: $color-transparent;    
+    background-image: url(../img/OurWeddingG.png);
+    background-repeat: no-repeat;
+    background-size:contain, cover;
+	background-position: center;
+    position: relative;
+
+        @include respond(tab-land) {
+            height: 20rem; 
+            margin-bottom: 5rem;           
+        }
+
+        @include respond(tab-port) {
+            height: 15rem; 
+            margin-bottom: 5rem;           
+        }
+
+        @include respond(phone) {
+            height: 25rem;
+            width: 60% !important;
+            margin: 0 auto;
+            margin-bottom: 5rem;      
+        }
+
+    }
+
+    &__table {
+        table-layout: fixed;
+        width: 100%;
+
+        @include respond(phone) {
+            width: 85% !important;
+            margin: 0 auto;
+        }
+        
+    }
+
+    &__table-column {
+        position: relative;
+        vertical-align: middle;
+            &:not(:last-child){
+                padding-right: 4rem;
+        }
+    }
+
+    &__line {
+        width: .2rem;
+        height : 16rem;
+        background-color: $color-light-blue;
+        position: absolute;
+        top: -10rem;
+        left: -2rem;
+        transform: rotate(-8deg);
+
+        @include respond(phone) {
+            height: 14rem;
+            top: -8rem;
+        }
+    } 
+
+    &__line-2 {
+        width: .2rem;
+        height : 12rem;
+        background-color: $color-light-blue;
+        position: absolute;
+        top: -6rem;
+        left: -2rem;
+        transform: rotate(-8deg);
+
+        @include respond(phone) {
+            height: 10rem;
+            top: -5rem;
+        }
+    } 
+
+   
+    &__hour {
+        float: right;
+    }
+
+
+    &__city {
+        float: right;
+        padding-top: .8rem;
+    }
+}
+
+
+.section-travel{
+	background-image: linear-gradient(
+		to bottom, 
+		rgba($color-light-blue,.6),
+		rgba($color-white,1));
+    padding: 10rem 0;
+    color: $color-med-blue;
+    
+
+    @include respond(phone) {
+        padding: 5rem 0;
+        padding-bottom: 8rem;
+    }
+}
+
+
+.travel{
+
+    @include respond(phone) {
+        max-width: 40rem;          
+    }
+
+    &__title {
+        height: 30rem;
+        color: $color-transparent;    
+        background-image: url(../img/TravelParkingG.png);
+        background-repeat: no-repeat;
+        background-size:contain, cover;
+        background-position: center;
+
+        @include respond(tab-land) {
+            height: 20rem;          
+        }
+
+        @include respond(tab-port) {
+            height: 18rem;
+            margin-bottom: 5rem;          
+        }
+
+     }
+
+     &__parking-list {
+         margin-top: 2rem;
+     }
+
+     &__parking-link {
+
+        &,
+        &:link,
+        &:visited {
+            color: $color-med-blue;
+        }
+        &:hover {
+            color: $color-med-blue;
+            text-decoration:underline;        }
+     }
+}
+
+
+
+.section-feature{
+    padding: 8rem 0rem 10rem 0rem;
+	background-image: linear-gradient(
+		to right bottom, 
+		rgba($color-dark-blue, 0.8), 
+		rgba($color-peach, 0.8)), 
+    url(../img/bishopsPalace.jpg);
+    background-size: cover;
+    border-top:2px solid $color-med-blue;
+    border-bottom:2px solid $color-dark-peach;
+
+    @include respond(phone) {
+        padding: 5rem 0;
+    }
+
+
+}
+
+
+.section-question{
+    padding: 10rem 0rem;
+    background-image: linear-gradient(
+		to bottom, 
+        rgba($color-peach, 0.3),
+        rgba($color-white, 1),      
+        rgba($color-white, 1));
+        
+        @include respond(phone) {
+            padding: 5rem 0;
+            padding-bottom: 8rem;
+        }
+}
+
+#question__title{
+    height: 20rem;
+    color: $color-transparent;    
+    background-image: url(../img/questionsG.png);
+    background-repeat: no-repeat;
+    background-size:contain, cover;
+    background-position: center;
+    position: relative;
+
+
+    @include respond(tab-port) {
+        height: 10rem;
+        margin-bottom: 5rem;
+    }    
+
+    @include respond(phone) {
+        height: 10rem;
+    }
+
+}
+
+.question__list {
+    margin: 6rem 6rem;
+
+    @include respond(tab-port) {
+        margin: 0rem 6rem;
+    }
+}
+
+
+.section-rsvp{
+	background-image: linear-gradient(
+		to bottom, 
+		rgba($color-med-blue, 1), 
+		rgba($color-white,1));
+    padding: 8rem 3rem;
+    border-top: 1px solid $color-blue;
+
+}
+
+
+.section__rsvpTitle{
+    height: 15rem;
+    margin-top: 5rem;  
+    color: $color-transparent;    
+    background-image: url(../img/RsvpG.png);
+    background-repeat: no-repeat;
+    background-size:contain, cover;
+    background-position: right;
+
+    @include respond(tab-land) {
+        height: 10rem;
+   
+    }
+
+    @include respond(tab-port) {
+        background-position: center;
+        height: 10rem;
+    }
+
+}
+
+.columnC{
+    margin: 5rem 0;
+    position: relative;
+
+    @include respond(tab-port) {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.line_bottom{
+    position: absolute;
+    top: -2.5rem;
+    left:-4rem;
+
+    @include respond(tab-port) {
+       display: none;
+    }
+}
+

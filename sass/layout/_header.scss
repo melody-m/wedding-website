@@ -1,0 +1,71 @@
+header{
+    width:100%;
+    height: $height_landing;
+    background-image:url(../img/flowers.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @include respond(tab-port) {
+        background-image:url(../img/flowers-med.jpg);
+    }
+    @include respond(phone) {
+        background-image:url(../img/flowers-small.jpg);
+    }
+}
+
+.landing {
+
+        width: 80%;
+        position: absolute;
+		top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    &__name{
+        height: 20rem;        
+		text-align: center;
+        color: $color-transparent;
+
+        background-image: url(../img/robert_melody.png);
+        background-repeat: no-repeat;
+        background-size:contain, cover;
+        background-position: top;
+
+        animation-name: moveInTop;
+	    animation-duration: 1s;
+        animation-timing-function: ease-out;    
+
+        @include respond(phone) {
+            height: 15rem;  
+        }
+    }
+
+    &__wedding-info {
+        text-align: center;
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &__wedding-date{
+        font-size:2.5rem;
+        letter-spacing: .5rem;
+        font-weight: 600;
+        line-height: 3rem;
+        display: block;
+        color:$color-blue;
+
+    }
+
+    &__wedding-city{
+        font-size: 2rem;
+        line-height: 6rem;
+        font-style: italic;
+        display: block;
+
+    }
+}
+
+
+
