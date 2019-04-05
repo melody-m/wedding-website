@@ -4,7 +4,7 @@
 		rgba($color-white, 1), 
     	rgba($color-light-blue,.2));
 
-    padding: 10rem 0;
+    padding: 10rem 8rem;
     border-bottom: 3px solid $color-white;
 
     @include respond(phone) {
@@ -112,7 +112,7 @@
 		to bottom, 
 		rgba($color-light-blue,.6),
 		rgba($color-white,1));
-    padding: 10rem 0;
+    padding: 10rem 8rem;
     color: $color-med-blue;
     
 
@@ -158,6 +158,7 @@
         &:link,
         &:visited {
             color: $color-med-blue;
+            cursor: pointer;
         }
         &:hover {
             color: $color-med-blue;
@@ -168,7 +169,7 @@
 
 
 .section-feature{
-    padding: 8rem 0rem 10rem 0rem;
+    padding: 8rem 5rem 10rem 5rem;
 	background-image: linear-gradient(
 		to right bottom, 
 		rgba($color-dark-blue, 0.8), 
@@ -187,7 +188,7 @@
 
 
 .section-question{
-    padding: 10rem 0rem;
+    padding: 10rem 8rem;
     background-image: linear-gradient(
 		to bottom, 
         rgba($color-peach, 0.3),
